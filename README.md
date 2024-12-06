@@ -39,6 +39,7 @@ spec:
           class: nginx  # Make sure this matches the class of your Ingress Controller
 ```
 
+
 ```
 kubectl apply -f clusterissuer.yaml
 ```
@@ -61,12 +62,12 @@ spec:
   - example.com  # List of domains to be covered by the certificate
 ```
 
+
 ```
 kubectl apply -f certificate.yaml
 ```
     
 - **Configure Ingress Resource**: Set up TLS and route traffic to services.
-
 ```
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -99,7 +100,6 @@ spec:
 kubectl apply -f ingress.yaml
 ```
 ## References
-
 
 - [Setting Up Kubernetes Ingress with TLS: A Comprehensive Guide](https://medium.com/p/2f798be9bbea/edit)
 - [NGINX Ingress Controller Documentation](https://kubernetes.github.io/ingress-nginx/)
