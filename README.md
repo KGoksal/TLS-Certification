@@ -62,7 +62,6 @@ spec:
   - example.com  # List of domains to be covered by the certificate
 ```
 
-
 ```
 kubectl apply -f certificate.yaml
 ```
@@ -94,7 +93,6 @@ spec:
             port:
               number: 3000  # Ensure this matches the port your service listens on
 ```
-
 
 ```
 kubectl apply -f ingress.yaml
