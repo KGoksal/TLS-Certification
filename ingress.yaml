@@ -20,5 +20,5 @@ spec:
         backend:
           service:
             name: wordpress  # Ensure this matches the name of your service
-            port:
-              number: 3000  # Ensure this matches the port your service listens on
+            port: 
+              number: 3000  # Ensure this matches the port your service listens on 
